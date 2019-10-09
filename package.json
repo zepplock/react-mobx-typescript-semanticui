@@ -1,0 +1,87 @@
+{
+  "name": "react-mobx-typescript-semanticui",
+  "description": "An (almost) empty project with React/Mobx/Typescript/SemanticUI",
+  "version": "1.0.0",
+  "homepage": "https://github.com/zepplock/react-mobx-typescript-semanticui",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean-dist && webpack --config=configs/webpack/prod.js",
+    "clean-dist": "rm -f -r -d dist",
+    "dev": "webpack-dev-server --config=configs/webpack/dev.js --hot",
+    "lint": "tslint './src/**/*.ts*' --format stylish --force",
+    "start": "serve -l 80 -s dist",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@hot-loader/react-dom": "^16.8.6",
+    "@types/node": "^12.7.12",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-router": "^5.1.1",
+    "@types/react-router-dom": "^5.1.0",
+    "@types/url-search-params": "^1.1.0",
+    "@types/webpack-env": "^1.13.6",
+    "awesome-typescript-loader": "^5.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "image-webpack-loader": "^6.0.0",
+    "mobx": "^5.4.4",
+    "mobx-react": "^6.1.3",
+    "node-sass": "^4.9.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.3.2",
+    "react-helmet-async": "^1.0.3",
+    "react-hot-loader": "=4.11.1",
+    "react-router-dom": "^5.1.2",
+    "sass-loader": "^8.0.0",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.88.1",
+    "style-loader": "^1.0.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.0.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-search-params-polyfill": "^7.0.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.0.6",
+    "webpack-dev-middleware": "^3.2.0",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.13",
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.2",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "ts-jest"
+    },
+    "setupFiles": [
+      "raf/polyfill"
+    ],
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.ts"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(scss|css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}

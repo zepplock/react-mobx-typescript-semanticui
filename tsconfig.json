@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "downlevelIteration": true,
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "es2017",
+        "jsx": "react",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    },
+    "awesomeTypescriptLoaderOptions": {
+        "useCache": true,
+        "forceIsolatedModules": true,
+        "useBabel": false,
+        "reportFiles": [
+            "src/**/*.{ts,tsx}"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

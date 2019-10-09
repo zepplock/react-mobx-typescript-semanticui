@@ -1,0 +1,9 @@
+.idea/
+.cache/
+dist/
+node_modules/
+src/**/*.jsx
+tests/__coverage__/
+tests/__mocks__/
+tests/__snapshots__/
+.awcache
